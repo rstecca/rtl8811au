@@ -183,6 +183,11 @@ unsigned int oob_gpio = 0;
  * total_len: the length of the command.
  *
  * */
+
+// rstecca HOTFIX Debian 9
+static inline bool is_compat_task(void) { return in_ia32_syscall() || in_x32_syscall(); }
+// end HOTFIX
+
 static int rtw_android_pno_setup(struct net_device *net, char *command, int total_len) {
 	pno_ssid_t pno_ssids_local[MAX_PNO_LIST_COUNT];
 	int res = -1;
