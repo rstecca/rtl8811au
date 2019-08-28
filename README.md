@@ -1,3 +1,7 @@
+# Note by rstecca
+This repo is forked from https://github.com/sloretz/rtl8811au
+I have no intention of maintaining this. All it is is a quick, dirty hotfix that worked for me on Debian 9 for my 8811au chipset WiFi dongle. I haven't tested with other distros but it might work.
+
 # rtl8811au driver for recent version of ubuntu
 
 This repo contains a driver originally called `rtl8821AU_linux_v4.3.14_13455.20150212_BTCOEX20150128-51` with additional patches to get it to build on Ubuntu xenial 16.04.
