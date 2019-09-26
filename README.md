@@ -3,7 +3,7 @@ This repo is forked from https://github.com/sloretz/rtl8811au but includes a **f
 
 **I have no intention of maintaining this. All it is is a quick hotfix that worked for me on Debian 9 for my 8811au chipset WiFi dongle. I haven't tested with other distros but it might work.**
 
-Follow instructions given in the [Building](##Building) section then run `modprobe 8821au`
+Follow instructions given in the [Building](#Building) section then run `modprobe 8821au`
 
 Other useful commands:   
 `lsmod | grep 8821au` to check whether te module has been installed correctly   
