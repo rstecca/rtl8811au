@@ -10,6 +10,11 @@ Other useful commands:
 `lsusb` to list all usb devices and find infos about your WiFi dongle   
 `lsusb -v -s 001:002` to obtain more infos about the device with address with bus=001 and device=002 (find these numbers with lsusb first)
 
+## Random Disconnections
+Random disconnections could be due to power saving been turned on for the device. You can check this is your case by inspecting the kern.log file with `sudo tail /var/log/kern.log`. If, in your listing, you can find the line `Jan 18 10:14:23 PCNAME kernel: [  384.189391] RTL871X: rtw_set_ps_mode(enp0s20f0u2) Enter 802.11 power save - WIFI-TRAFFIC_IDLE` than you have confirmed this is your problem.
+
+If you dig the internet for a solution you'll mostly find command sequences that rely on `iw`. Unfortunately `iw` here isn't helpful since rtl is not a wlan device so `iw` will not see it.
+
 # rtl8811au driver for recent version of ubuntu
 
 This repo contains a driver originally called `rtl8821AU_linux_v4.3.14_13455.20150212_BTCOEX20150128-51` with additional patches to get it to build on Ubuntu xenial 16.04.
