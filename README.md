@@ -15,6 +15,15 @@ Random disconnections could be due to power saving been turned on for the device
 
 If you dig the internet for a solution you'll mostly find command sequences that rely on `iw`. Unfortunately `iw` here isn't helpful since rtl is not a wlan device so `iw` will not see it.
 
+Someone claims the solution is to edit/create a file called /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf and enter the lines
+
+```
+[connection]
+wifi.powersave = 2
+```
+
+but I tested this and it does not solve the issue. At least under Debian 9.
+
 # rtl8811au driver for recent version of ubuntu
 
 This repo contains a driver originally called `rtl8821AU_linux_v4.3.14_13455.20150212_BTCOEX20150128-51` with additional patches to get it to build on Ubuntu xenial 16.04.
