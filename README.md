@@ -23,7 +23,7 @@ wifi.powersave = 2
 ```
 
 but I tested this and it does not solve the issue. At least under Debian 9.  
-**I am currently looking for a solution so if you have one please refer to issue** #1 
+**I am currently looking for a solution so if you have one please refer to [issue #1](https://github.com/rstecca/rtl8811au/issues/1)** 
 
 ---
 
