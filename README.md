@@ -22,7 +22,14 @@ Someone claims the solution is to edit/create a file called /etc/NetworkManager/
 wifi.powersave = 2
 ```
 
-but I tested this and it does not solve the issue. At least under Debian 9.
+but I tested this and it does not solve the issue. At least under Debian 9.  
+**I am currently looking for a solution so if you have one please open an ISSUE in this repository.**
+
+---
+
+**_THE FOLLOWING IS THE ORIGINAL TEXT FROM THE AUTHOR OF THIS VERSION OF rtl8811au_**
+
+---
 
 # rtl8811au driver for recent version of ubuntu
 
