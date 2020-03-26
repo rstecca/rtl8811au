@@ -22,7 +22,19 @@ Someone claims the solution is to edit/create a file called /etc/NetworkManager/
 wifi.powersave = 2
 ```
 
-but I tested this and it does not solve the issue. At least under Debian 9.  
+but I tested this and it does not solve the issue. At least under Debian 9.
+
+Another path I've tried is
+
+```
+vim /etc/modprobe.d/8821au.conf
+```
+and enter the following line
+```
+options 8821au rtw_power_mgnt=0 rtw_enusbss=0
+```
+but this didn't work either.
+
 **I am currently looking for a solution so if you have one please refer to [issue #1](https://github.com/rstecca/rtl8811au/issues/1)** 
 
 ---
